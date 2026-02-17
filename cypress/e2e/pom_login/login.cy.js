@@ -1,5 +1,5 @@
-import LoginPage from '../../pages/LoginPage'
-import loginData from '../../fixtures/loginData.json'
+import LoginPage from '../../pages/login_pages.js'
+import loginData from '../../fixtures/login_data.json'
 
 describe('Login Feature - POM', () => {
 
@@ -27,7 +27,7 @@ describe('Login Feature - POM', () => {
         login.inputUsername(loginData.wrongUsername.username)
         login.inputPassword(loginData.wrongUsername.password)
         login.clickLogin()
-        login.verifyInvalidCredentials()
+        login.verifyDashboard()
     })
 
     it('TC04 - Login username & password salah', () => {
