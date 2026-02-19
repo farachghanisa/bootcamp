@@ -1,4 +1,4 @@
-import LoginPage from '../../pages/login_pages.js'
+import LoginPage from '../../support/login_pages.js'
 import loginData from '../../fixtures/login_data.json'
 
 describe('Login Feature - POM', () => {
