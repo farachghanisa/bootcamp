@@ -9,7 +9,7 @@ class ForgotPasswordPage {
   }
 
   clickReset() {
-    cy.get('button[type="submit"]').click()
+    cy.get('button[type="submit"]').click(), {timeout : 6000}
   }
 
   successMessage() {

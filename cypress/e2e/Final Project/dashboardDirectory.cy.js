@@ -1,5 +1,5 @@
-import LoginPage from '../support/login_pages'
-import DashboardPage from '../support/DashboardPage'
+import LoginPage from '../../support/login_pages'
+import DashboardPage from '../../support/DashboardPage'
 
 describe('Dashboard & Directory Feature', () => {
 
