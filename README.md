@@ -10,7 +10,6 @@ Project ini dibuat untuk mengotomasi testing aplikasi **OrangeHRM Demo** (versi 
 ✅ API Intercept  
 ✅ Positive + Negative test case  
 ✅ Asynchronous wait & assertion  
-✅ Struktur test rapih dan scalable
 
 🎯 Fungsionalitas yang Diuji
 
