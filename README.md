@@ -26,6 +26,5 @@ Project ini dibuat untuk mengotomasi testing aplikasi **OrangeHRM Demo** (versi 
 
 📊 Dashboard
 - Verify dashboard load
-- API filter check (Leave Today, Buzz Feed, Time at Work)
-- Dashboard widgets
-- Quick Launch actions
+- Open directory menu
+- Open admin menu
