@@ -8,17 +8,20 @@ class DashboardPage {
     cy.contains('Directory').click()
   }
 
-  searchEmployee(name) {
-    cy.get('input[placeholder="Type for hints..."]').type(name)
-  }
-
-  clickSearch() {
-    cy.contains('Search').click()
-  }
-
   verifyDirectoryPage() {
     cy.url().should('include', '/directory')
   }
+
+  clickAdminMenu() {
+    cy.contains('span', 'Admin')
+      .should('be.visible')
+      .click()
+  }
+
+  verifyAdminPage() {
+    cy.url().should('include', '/admin')
+  }
+
 
 }
 

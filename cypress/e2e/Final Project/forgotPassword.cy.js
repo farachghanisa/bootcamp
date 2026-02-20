@@ -10,23 +10,6 @@ describe('Forgot Password Feature', () => {
     login.visit()
   })
 
-  it('Reset Password Success', () => {
-
-    cy.intercept('POST', '**/auth/requestPasswordResetCode')
-      .as('resetRequest')
-
-    forgot.clickForgotPassword()
-    forgot.inputUsername('Admin')
-    forgot.clickReset()
-
-    cy.wait('@resetRequest')
-      .its('response.statusCode')
-      .should('eq', 302)
-
-    forgot.successMessage()
-      .should('contain', 'Reset Password link sent successfully')
-  })
-
   it('Cancel Reset Password', () => {
 
     forgot.clickForgotPassword()

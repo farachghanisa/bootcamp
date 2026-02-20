@@ -39,4 +39,19 @@ describe('Dashboard & Directory Feature', () => {
     cy.url().should('include', '/directory')
   })
 
+  it('Open Admin Menu', () => {
+
+    cy.intercept('GET', '**/api/v2/admin/users*')
+    .as('adminUsers')
+
+    dashboard.clickAdminMenu()
+
+    cy.wait('@adminUsers')
+    .its('response.statusCode')
+    .should('eq', 200)
+
+    dashboard.verifyAdminPage()
+
+  })
+
 })
